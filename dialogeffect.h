@@ -37,8 +37,8 @@ private:
     qreal  m_distance;
     qreal  m_blurRadius;
     QColor m_color;
-	qint32 m_corner;
-	QWidget* mWidget;
+    qint32 m_corner;
+    QWidget* mWidget;
 };
 
 #endif // DIALOGEFFECT_H

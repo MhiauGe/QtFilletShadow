@@ -12,7 +12,7 @@ class DialogEffect : public QGraphicsEffect
 {
     Q_OBJECT
 public:
-	explicit DialogEffect(QWidget* aWidget, QObject *parent = 0);
+    explicit DialogEffect(QWidget* aWidget, QObject *parent = 0);
 
     void draw(QPainter* painter);
     QRectF boundingRectFor(const QRectF& rect) const;
@@ -27,11 +27,11 @@ public:
     inline QColor color() const { return m_color; }
 
 private:
-	/**
-	* @brief setRoundedCornerAndShadow
-	* @param widget 想要设置的弹窗类对象
-	*/
-	void setRoundedCornerAndShadow();
+    /**
+    * @brief setRoundedCornerAndShadow
+    * @param widget 想要设置的弹窗类对象
+    */
+    void setRoundedCornerAndShadow();
 
 private:
     qreal  m_distance;

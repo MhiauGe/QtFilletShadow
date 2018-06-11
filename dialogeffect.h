@@ -7,14 +7,6 @@
 /**
  * @brief The DialogEffect class
  * 功能：用于实现所有弹窗的圆角和阴影效果
- * 用法：
- * 1.弹窗类构造函数中setAttribute(Qt::WA_TranslucentBackground);
- * 2.将弹窗与各控件之间增加widget层，放置所有空间到widget，设置widget父控件为弹窗类
- * 3. 在initstyle中使用下列代码：
- *    this->resize(width() + 40, height() + 40);
- *    this->layout()->setMargin(20);
- *    DialogEffect* dialogShadow = new DialogEffect;
- *    dialogShadow->setRoundedCornerAndShadow(ui->wgtContent);
  */
 class DialogEffect : public QGraphicsEffect
 {

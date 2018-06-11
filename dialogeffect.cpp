@@ -105,10 +105,10 @@ void DialogEffect::setRoundedCornerAndShadow()
 	mWidget->setLayout(layout);
 
 	QPixmap pixmap(mWidget->size() - QSize(40, 40));
-    QPainter painterRoundCorner(&pixmap);
-    painterRoundCorner.setRenderHint(QPainter::Antialiasing, true);
-    painterRoundCorner.fillRect(pixmap.rect(), Qt::white);
-    painterRoundCorner.setBrush(Qt::black);
+        QPainter painterRoundCorner(&pixmap);
+    	painterRoundCorner.setRenderHint(QPainter::Antialiasing, true);
+    	painterRoundCorner.fillRect(pixmap.rect(), Qt::white);
+    	painterRoundCorner.setBrush(Qt::black);
 	painterRoundCorner.drawRoundRect(pixmap.rect(), m_corner, m_corner);
 	wgtContent->setMask(pixmap.createMaskFromColor(Qt::white));
 
